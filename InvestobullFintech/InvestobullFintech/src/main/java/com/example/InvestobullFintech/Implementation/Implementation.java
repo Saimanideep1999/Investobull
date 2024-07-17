@@ -21,11 +21,11 @@ public class Implementation {
 	@Autowired
 	CandlesRepository candlesRepository;
 
-	//To save all the candles in BD
+	//To get the candles in BD
 	public List<Candles> getAllCandelDetails(){
 		return candlesRepository.findAll();
 	}
-	//To get all the Candles
+	//To save  the Candles
 	public Candles saveJson(Candles i) {
 		return candlesRepository.save(i);
 
